@@ -250,7 +250,7 @@
 
   const ctaBanner = () => `<section class="section-sm"><div class="container">
     <div class="cta-banner reveal">
-      <img src="images/logo-symbol-white.png" alt="" class="wave-bg">
+      <img src="logo-symbol-white.png" alt="" class="wave-bg">
       <div><span class="eyebrow">Rejoignez le mouvement</span><h2 class="h-lg">−10% sur votre première routine</h2><p style="color:#B8C7D8;margin:0">Inscrivez-vous pour recevoir conseils skincare, nouveautés et offres en avant-première.</p></div>
       <form data-form="newsletter"><input type="email" required placeholder="Votre adresse e-mail" aria-label="Votre adresse e-mail"><button class="btn btn-light" type="submit">Je m'inscris</button></form>
     </div></div></section>`;
@@ -277,7 +277,7 @@
           </div>
         </div>
         <div class="hero-visual reveal d2">
-          <div class="hero-arch"><img src="images/model-serum.jpg" alt="Femme appliquant le Glow Serum BEAUTY IN MOTION"></div>
+          <div class="hero-arch"><img src="model-serum.jpg" alt="Femme appliquant le Glow Serum BEAUTY IN MOTION"></div>
           <a href="#glow-serum" class="float-card fc1"><img src="${serum.images[1]}" alt=""><div><strong>Glow Serum</strong><span>${fmt(serum.price)} · ${serum.size}</span></div></a>
           <div class="float-card fc2">${avatarSVG(0, 44)}<div><strong>« Mon teint a changé »</strong><span class="stars">★★★★★</span></div></div>
           <span style="position:absolute;top:-14px;left:12%">${STAR_SVG}</span>
@@ -340,7 +340,7 @@
     </section>
 
     <section class="section values">
-      <img src="images/logo-symbol-white.png" alt="" class="values-wave">
+      <img src="logo-symbol-white.png" alt="" class="values-wave">
       <div class="container">
         <span class="eyebrow reveal">Nos valeurs</span>
         <h2 class="h-lg reveal d1" style="max-width:780px">Une marque <em>dynamique</em>, moderne et accessible, pour exprimer votre beauté au quotidien.</h2>
@@ -354,8 +354,8 @@
     <section class="section">
       <div class="container lookbook">
         <div class="look-images reveal">
-          <div class="li1"><img src="images/model-cream.jpg" alt="Application de l'Hydrating Cream" loading="lazy"><a href="#hydrating-cream" class="look-tag"><img src="images/cream-3.jpg" alt="">Hydrating Cream</a></div>
-          <div class="li2"><img src="images/model-serum.jpg" alt="Application du Glow Serum" loading="lazy" style="object-position:50% 30%"><a href="#glow-serum" class="look-tag"><img src="images/serum-1.jpg" alt="">Glow Serum</a></div>
+          <div class="li1"><img src="model-cream.jpg" alt="Application de l'Hydrating Cream" loading="lazy"><a href="#hydrating-cream" class="look-tag"><img src="cream-3.jpg" alt="">Hydrating Cream</a></div>
+          <div class="li2"><img src="model-serum.jpg" alt="Application du Glow Serum" loading="lazy" style="object-position:50% 30%"><a href="#glow-serum" class="look-tag"><img src="serum-1.jpg" alt="">Glow Serum</a></div>
         </div>
         <div>
           <span class="eyebrow reveal">#GlowWithEveryMove</span>
@@ -392,8 +392,8 @@
 
   function videoBlock(kind = "routine") {
     const v = kind === "promo"
-      ? { src: "images/promo-16x9.mp4", poster: "images/promo-poster.jpg", label: "Publicité BEAUTY IN MOTION" }
-      : { src: "images/routine.mp4", poster: "images/routine-poster.jpg", label: "Vidéo : la routine BEAUTY IN MOTION en 3 étapes" };
+      ? { src: "promo-16x9.mp4", poster: "promo-poster.jpg", label: "Publicité BEAUTY IN MOTION" }
+      : { src: "routine.mp4", poster: "routine-poster.jpg", label: "Vidéo : la routine BEAUTY IN MOTION en 3 étapes" };
     return `<div class="video-wrap reveal">
       <video src="${v.src}" poster="${v.poster}" playsinline loop preload="metadata" aria-label="${v.label}"></video>
       <button class="play-btn" data-action="play-video" aria-label="Lire la vidéo"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></button>
@@ -601,7 +601,7 @@
     const palette = [["Deep Navy Blue", "#203B59"], ["Steel Blue", "#6686A5"], ["Powder Blue", "#A9BED5"], ["Light Grey", "#D5D9E0"], ["Icy White", "#F5F7FA"]];
     return `${pageHero("Notre histoire", "Notre histoire", "La beauté <em>en mouvement</em>", "")}
     <section class="section" style="padding-top:10px"><div class="container about-grid">
-      <div class="about-img reveal"><img src="images/model-cream.jpg" alt="Campagne BEAUTY IN MOTION"></div>
+      <div class="about-img reveal"><img src="model-cream.jpg" alt="Campagne BEAUTY IN MOTION"></div>
       <div>
         <p class="lead reveal" style="font-size:1.2rem;color:var(--ink)">BEAUTY IN MOTION est née d'une idée simple : la beauté du quotidien est faite de mouvement et d'énergie.</p>
         <p class="muted reveal d1">Nous imaginons des soins de la peau modernes, pratiques et accessibles, pensés pour les femmes marocaines actives qui veulent exprimer leur beauté et leur personnalité au quotidien. Notre première gamme réunit trois gestes essentiels — nettoyer, illuminer, hydrater — dans une identité élégante et facilement reconnaissable.</p>
@@ -617,11 +617,11 @@
         <p class="muted reveal d2">Les deux vagues fluides évoquent le mouvement, la fluidité et l'énergie. L'étoile symbolise l'éclat et la lumière. Le nom, en lettres majuscules fines, affirme le caractère élégant de la marque.</p>
         <div class="palette reveal d3">${palette.map(([n, h]) => `<div class="swatch"><i style="background:${h}"></i><div><strong>${n}</strong>${h}</div></div>`).join("")}</div>
       </div>
-      <div class="logo-panel reveal"><img src="images/logo-full.png" alt="Logo BEAUTY IN MOTION — Glow with every move."></div>
+      <div class="logo-panel reveal"><img src="logo-full.png" alt="Logo BEAUTY IN MOTION — Glow with every move."></div>
     </div></section>
 
     <section class="section values">
-      <img src="images/logo-symbol-white.png" alt="" class="values-wave">
+      <img src="logo-symbol-white.png" alt="" class="values-wave">
       <div class="container">
         <span class="eyebrow">Nos valeurs</span>
         <h2 class="h-lg" style="max-width:760px">Ce qui nous <em>anime</em></h2>
